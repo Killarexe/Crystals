@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "crystals",
+  "version": "${version}",
+  "name": "Crystals",
+  "description": "A small mod witch adds ores crystals.",
+  "authors": [
+    "Killar.exe"
+  ],
+  "contact": {
+    "homepage": "https://killarexe.github.io",
+    "sources": "https://github.com/Killarexe/Crystals"
+  },
+  "license": "Insert License Here",
+  "icon": "assets/crystals/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "github.killarexe.crystals.fabric.CrystalsFabricMod"
+    ]
+  },
+  "depends": {
+    "fabric": "*",
+    "minecraft": ">=1.20.4"
+  }
+}
