@@ -1,0 +1,30 @@
+{
+	"variants": {
+		"facing=down": {
+			"model": "crystals:block/emerald_crystal",
+			"x": 180
+		},
+		"facing=east": {
+			"model": "crystals:block/emerald_crystal",
+			"x": 90,
+			"y": 90
+		},
+		"facing=north": {
+			"model": "crystals:block/emerald_crystal",
+			"x": 90
+		},
+		"facing=south": {
+			"model": "crystals:block/emerald_crystal",
+			"x": 90,
+			"y": 180
+		},
+		"facing=up": {
+			"model": "crystals:block/emerald_crystal"
+		},
+		"facing=west": {
+			"model": "crystals:block/emerald_crystal",
+			"x": 90,
+			"y": 270
+		}
+	}
+}

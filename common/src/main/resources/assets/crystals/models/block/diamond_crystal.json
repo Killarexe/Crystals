@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "crystals:block/diamond_crystal"
+  },
+  "render_type": "cutout"
+}

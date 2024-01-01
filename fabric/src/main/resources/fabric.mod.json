@@ -16,7 +16,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "github.killarexe.crystals.fabric.CrystalsFabricMod"
+      "github.killarexe.crystals.fabric.CrystalsModFabric"
+    ],
+    "client": [
+      "github.killarexe.crystals.fabric.client.CrystalsModFabricClient"
     ]
   },
   "depends": {
