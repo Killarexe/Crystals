@@ -1,0 +1,14 @@
+{
+  "type": "crystals:crystal_feature",
+  "config": {
+    "target": {
+	  "target": {
+		"predicate_type": "minecraft:block_match",
+		"block": "minecraft:glowstone"
+	  },
+	  "state": {
+	    "Name": "crystals:glowstone_crystal"
+	  }
+    }
+  }
+}

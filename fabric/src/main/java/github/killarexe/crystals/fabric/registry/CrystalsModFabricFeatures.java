@@ -15,6 +15,10 @@ import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 public class CrystalsModFabricFeatures {
 	
 	public static final ResourceKey<PlacedFeature> DIAMOND_CRYSTALS_FEATURE = createKey("diamond_crystals");
+	public static final ResourceKey<PlacedFeature> EMERALD_CRYSTALS_FEATURE = createKey("emerald_crystals");
+	public static final ResourceKey<PlacedFeature> LAPIS_CRYSTALS_FEATURE = createKey("lapis_crystals");
+	public static final ResourceKey<PlacedFeature> REDSTONE_CRYSTALS_FEATURE = createKey("redstone_crystals");
+	public static final ResourceKey<PlacedFeature> GLOWSTONE_CRYSTALS_FEATURE = createKey("glowstone_crystals");
 	
 	private static ResourceKey<PlacedFeature> createKey(String id) {
 		return ResourceKey.create(Registries.PLACED_FEATURE, CrystalsMod.id(id));
@@ -23,6 +27,10 @@ public class CrystalsModFabricFeatures {
 	public static void register() {
 		Registry.register(BuiltInRegistries.FEATURE, CrystalsMod.id("crystal_feature"), new CrystalFeature(CrystalFeatureConfig.CODEC));
 		
-		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.UNDERGROUND_DECORATION, DIAMOND_CRYSTALS_FEATURE);
+		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.UNDERGROUND_ORES, DIAMOND_CRYSTALS_FEATURE);
+		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.UNDERGROUND_ORES, EMERALD_CRYSTALS_FEATURE);
+		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.UNDERGROUND_ORES, LAPIS_CRYSTALS_FEATURE);
+		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.UNDERGROUND_ORES, REDSTONE_CRYSTALS_FEATURE);
+		BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(), GenerationStep.Decoration.UNDERGROUND_ORES, GLOWSTONE_CRYSTALS_FEATURE);
 	}
 }

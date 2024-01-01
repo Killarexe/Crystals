@@ -1,0 +1,14 @@
+{
+  "type": "crystals:crystal_feature",
+  "config": {
+    "target": {
+	  "target": {
+		"predicate_type": "minecraft:tag_match",
+		"tag": "minecraft:emerald_ores"
+	  },
+	  "state": {
+	    "Name": "crystals:emerald_crystal"
+	  }
+    }
+  }
+}

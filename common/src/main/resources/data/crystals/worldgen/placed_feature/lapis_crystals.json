@@ -1,5 +1,5 @@
 {
-  "feature": "crystals:diamond_crystals",
+  "feature": "crystals:lapis_crystals",
   "placement": [
     {
       "type": "minecraft:count",
@@ -19,7 +19,7 @@
           "above_bottom": -63
         },
         "max_inclusive": {
-          "absolute": 16
+          "absolute": 64
         }
       }
     },

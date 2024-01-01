@@ -1,0 +1,14 @@
+{
+  "type": "crystals:crystal_feature",
+  "config": {
+    "target": {
+	  "target": {
+		"predicate_type": "minecraft:tag_match",
+		"tag": "minecraft:lapis_ores"
+	  },
+	  "state": {
+	    "Name": "crystals:lapis_crystal"
+	  }
+    }
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "feature": "crystals:diamond_crystals",
+  "feature": "crystals:emerald_crystals",
   "placement": [
     {
       "type": "minecraft:count",
@@ -16,10 +16,10 @@
       "height": {
         "type": "minecraft:uniform",
         "min_inclusive": {
-          "above_bottom": -63
+          "above_bottom": 19
         },
         "max_inclusive": {
-          "absolute": 16
+          "absolute": 128
         }
       }
     },

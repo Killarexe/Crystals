@@ -1,5 +1,5 @@
 {
-  "feature": "crystals:diamond_crystals",
+  "feature": "crystals:redstone_crystals",
   "placement": [
     {
       "type": "minecraft:count",
