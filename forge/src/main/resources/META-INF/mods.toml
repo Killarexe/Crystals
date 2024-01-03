@@ -1,6 +1,6 @@
 modLoader = "javafml"
 loaderVersion = "[49,)"
-issueTrackerURL = "https://github.com/Killarexe/Crystals/issues"
+issueTrackerURL = "https://raw.githubusercontent.com/Killarexe/Crystals/master/forge/update.json"
 license = "CC0-1.0"
 
 [[mods]]
