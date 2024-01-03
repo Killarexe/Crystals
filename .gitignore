@@ -9,6 +9,7 @@ output/
 bin/
 libs/
 
+.factorypath
 .classpath
 .project
 .idea/

@@ -1,7 +1,7 @@
 modLoader = "javafml"
-loaderVersion = "[47,)"
-#issueTrackerURL = ""
-license = "Insert License Here"
+loaderVersion = "[49,)"
+issueTrackerURL = "https://github.com/Killarexe/Crystals/issues"
+license = "CC0-1.0"
 
 [[mods]]
 modId = "crystals"
@@ -11,18 +11,18 @@ authors = "Killar.exe"
 description = '''
 A small mod witch adds ores crystals...
 '''
-#logoFile = ""
+logoFile = "assets/crystals/title.png"
 
 [[dependencies.crystals]]
 modId = "forge"
 mandatory = true
-versionRange = "[47,)"
+versionRange = "[49,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.crystals]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[1.20.1,)"
+versionRange = "[1.20.4,)"
 ordering = "NONE"
 side = "BOTH"

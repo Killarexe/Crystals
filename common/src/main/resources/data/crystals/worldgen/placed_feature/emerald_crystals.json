@@ -2,16 +2,6 @@
   "feature": "crystals:emerald_crystals",
   "placement": [
     {
-      "type": "minecraft:count",
-      "count": {
-        "type": "minecraft:uniform",
-        "value": {
-          "min_inclusive": 127,
-          "max_inclusive": 255
-        }
-      }
-    },
-    {
       "type": "minecraft:height_range",
       "height": {
         "type": "minecraft:uniform",
@@ -24,12 +14,17 @@
       }
     },
     {
-      "type": "minecraft:in_square"
+      "type": "minecraft:count_on_every_layer",
+      "count": {
+        "type": "minecraft:uniform",
+        "value": {
+          "min_inclusive": 127,
+          "max_inclusive": 255
+        }
+      }
     },
     {
-      "type": "minecraft:surface_relative_threshold_filter",
-      "heightmap": "OCEAN_FLOOR_WG",
-      "max_inclusive": -13
+      "type": "minecraft:in_square"
     },
     {
       "type": "minecraft:biome"

@@ -1,0 +1,10 @@
+{
+	"homepage": "https://modrinth.com/mod/crystals",
+	"1.20.4": {
+		"1.0": "Add basic crystals and crystal generation"
+	},
+	"promos": {
+		"1.20.4-latest": "1.0",
+		"1.20.4-recommended": "1.0"
+	}
+}
