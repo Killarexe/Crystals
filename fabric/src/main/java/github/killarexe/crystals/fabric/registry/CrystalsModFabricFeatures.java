@@ -27,10 +27,10 @@ public class CrystalsModFabricFeatures {
 	public static void register() {
 		Registry.register(BuiltInRegistries.FEATURE, CrystalsMod.id("crystal_feature"), new CrystalFeature(CrystalFeatureConfig.CODEC));
 		
-		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.UNDERGROUND_ORES, DIAMOND_CRYSTALS_FEATURE);
-		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.UNDERGROUND_ORES, EMERALD_CRYSTALS_FEATURE);
-		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.UNDERGROUND_ORES, LAPIS_CRYSTALS_FEATURE);
-		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.UNDERGROUND_ORES, REDSTONE_CRYSTALS_FEATURE);
-		BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(), GenerationStep.Decoration.UNDERGROUND_ORES, GLOWSTONE_CRYSTALS_FEATURE);
+		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.UNDERGROUND_DECORATION, DIAMOND_CRYSTALS_FEATURE);
+		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.UNDERGROUND_DECORATION, EMERALD_CRYSTALS_FEATURE);
+		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.UNDERGROUND_DECORATION, LAPIS_CRYSTALS_FEATURE);
+		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.UNDERGROUND_DECORATION, REDSTONE_CRYSTALS_FEATURE);
+		BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(), GenerationStep.Decoration.UNDERGROUND_DECORATION, GLOWSTONE_CRYSTALS_FEATURE);
 	}
 }

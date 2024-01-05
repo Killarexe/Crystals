@@ -7,5 +7,5 @@
 		"crystals:redstone_crystals",
 		"crystals:lapis_crystals"
 	],
-	"step": "underground_ores"
+	"step": "underground_decoration"
 }
