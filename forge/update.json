@@ -1,10 +1,11 @@
 {
 	"homepage": "https://modrinth.com/mod/crystals",
 	"1.20.4": {
-		"1.0": "Add basic crystals and crystal generation"
+		"1.0.0": "Add basic crystals and crystal generation.",
+		"1.1.0": "Increase chances of generating crystals and patch glowstone crystals not generating."
 	},
 	"promos": {
-		"1.20.4-latest": "1.0",
-		"1.20.4-recommended": "1.0"
+		"1.20.4-latest": "1.1.0",
+		"1.20.4-recommended": "1.1.0"
 	}
 }
