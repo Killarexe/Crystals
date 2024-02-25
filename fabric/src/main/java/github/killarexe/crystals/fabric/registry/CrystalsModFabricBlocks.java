@@ -20,7 +20,7 @@ public class CrystalsModFabricBlocks {
 	public static final Block GLOWSTONE_CRYSTAL = createBlock("glowstone_crystal");
 	
 	private static Block createBlock(String id) {
-		Block block = new AmethystClusterBlock(5.0F, 3.0F, FabricBlockSettings.copyOf(Blocks.LARGE_AMETHYST_BUD));
+		Block block = new AmethystClusterBlock(5, 3, FabricBlockSettings.copyOf(Blocks.LARGE_AMETHYST_BUD));
 		BLOCKS.put(id, block);
 		return block;
 	}

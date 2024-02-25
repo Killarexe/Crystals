@@ -12,9 +12,9 @@ import net.minecraftforge.registries.RegistryObject;
 public class CrystalsModForgeBlocks {
 	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, CrystalsMod.MOD_ID);
 	
-	public static final RegistryObject<Block> DIAMOND_CRYSTAL = BLOCKS.register("diamond_crystal", () -> new AmethystClusterBlock(5.0F, 3.0F, BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD)));
-	public static final RegistryObject<Block> EMERALD_CRYSTAL = BLOCKS.register("emerald_crystal", () -> new AmethystClusterBlock(5.0F, 3.0F, BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD)));
-	public static final RegistryObject<Block> LAPIS_CRYSTAL = BLOCKS.register("lapis_crystal", () -> new AmethystClusterBlock(5.0F, 3.0F, BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD)));
-	public static final RegistryObject<Block> REDSTONE_CRYSTAL = BLOCKS.register("redstone_crystal", () -> new AmethystClusterBlock(5.0F, 3.0F, BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD)));
-	public static final RegistryObject<Block> GLOWSTONE_CRYSTAL = BLOCKS.register("glowstone_crystal", () -> new AmethystClusterBlock(5.0F, 3.0F, BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD)));
+	public static final RegistryObject<Block> DIAMOND_CRYSTAL = BLOCKS.register("diamond_crystal", () -> new AmethystClusterBlock(5, 3, BlockBehaviour.Properties.copy(Blocks.LARGE_AMETHYST_BUD)));
+	public static final RegistryObject<Block> EMERALD_CRYSTAL = BLOCKS.register("emerald_crystal", () -> new AmethystClusterBlock(5, 3, BlockBehaviour.Properties.copy(Blocks.LARGE_AMETHYST_BUD)));
+	public static final RegistryObject<Block> LAPIS_CRYSTAL = BLOCKS.register("lapis_crystal", () -> new AmethystClusterBlock(5, 3, BlockBehaviour.Properties.copy(Blocks.LARGE_AMETHYST_BUD)));
+	public static final RegistryObject<Block> REDSTONE_CRYSTAL = BLOCKS.register("redstone_crystal", () -> new AmethystClusterBlock(5, 3, BlockBehaviour.Properties.copy(Blocks.LARGE_AMETHYST_BUD)));
+	public static final RegistryObject<Block> GLOWSTONE_CRYSTAL = BLOCKS.register("glowstone_crystal", () -> new AmethystClusterBlock(5, 3, BlockBehaviour.Properties.copy(Blocks.LARGE_AMETHYST_BUD)));
 }
