@@ -18,7 +18,8 @@ public class CrystalsModFabricBlocks {
 	public static final Block LAPIS_CRYSTAL = createBlock("lapis_crystal");
 	public static final Block REDSTONE_CRYSTAL = createBlock("redstone_crystal");
 	public static final Block GLOWSTONE_CRYSTAL = createBlock("glowstone_crystal");
-	
+	public static final Block QUARTZ_CRYSTAL = createBlock("quartz_crystal");
+
 	private static Block createBlock(String id) {
 		Block block = new AmethystClusterBlock(5, 3, FabricBlockSettings.copyOf(Blocks.LARGE_AMETHYST_BUD));
 		BLOCKS.put(id, block);

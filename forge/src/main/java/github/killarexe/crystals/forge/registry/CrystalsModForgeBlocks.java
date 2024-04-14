@@ -17,4 +17,5 @@ public class CrystalsModForgeBlocks {
 	public static final RegistryObject<Block> LAPIS_CRYSTAL = BLOCKS.register("lapis_crystal", () -> new AmethystClusterBlock(5, 3, BlockBehaviour.Properties.copy(Blocks.LARGE_AMETHYST_BUD)));
 	public static final RegistryObject<Block> REDSTONE_CRYSTAL = BLOCKS.register("redstone_crystal", () -> new AmethystClusterBlock(5, 3, BlockBehaviour.Properties.copy(Blocks.LARGE_AMETHYST_BUD)));
 	public static final RegistryObject<Block> GLOWSTONE_CRYSTAL = BLOCKS.register("glowstone_crystal", () -> new AmethystClusterBlock(5, 3, BlockBehaviour.Properties.copy(Blocks.LARGE_AMETHYST_BUD)));
+	public static final RegistryObject<Block> QUARTZ_CRYSTAL = BLOCKS.register("quartz_crystal", () -> new AmethystClusterBlock(5, 3, BlockBehaviour.Properties.copy(Blocks.LARGE_AMETHYST_BUD)));
 }

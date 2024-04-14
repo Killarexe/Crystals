@@ -1,6 +1,9 @@
 {
 	"type": "forge:add_features",
 	"biomes": "#minecraft:is_overworld",
-	"features": "crystals:glowstone_crystals",
+	"features": [
+		"crystals:glowstone_crystals",
+		"crystals:quartz_crystals"
+	],
 	"step": "underground_decoration"
 }

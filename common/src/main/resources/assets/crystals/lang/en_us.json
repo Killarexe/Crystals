@@ -3,5 +3,6 @@
 	"block.crystals.emerald_crystal": "Emerald Crystal",
 	"block.crystals.lapis_crystal": "Lapis Crystal",
 	"block.crystals.redstone_crystal": "Redstone Crystal",
-	"block.crystals.glowstone_crystal": "Glowstone Crystal"
+	"block.crystals.glowstone_crystal": "Glowstone Crystal",
+	"block.crystals.quartz_crystal": "Quartz Crystal"
 }
