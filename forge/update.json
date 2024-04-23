@@ -1,27 +1,31 @@
 {
 	"homepage": "https://modrinth.com/mod/crystals",
 	"1.20.1": {
-		"1.1.1": "1.20.1 backport of 1.1.0."
+		"1.1.1": "1.20.1 backport of 1.1.0.",
+		"1.2.0": "Add quartz crystal"
 	},
 	"1.20.2": {
-		"1.1.1": "1.20.1 backport of 1.1.0."
+		"1.1.1": "1.20.1 backport of 1.1.0.",
+		"1.2.0": "Add quartz crystal"
 	},
 	"1.20.3": {
-		"1.1.1": "1.20.1 backport of 1.1.0."
+		"1.1.1": "1.20.1 backport of 1.1.0.",
+		"1.2.0": "Add quartz crystal"
 	},
 	"1.20.4": {
 		"1.0.0": "Add basic crystals and crystal generation.",
 		"1.1.0": "Increase chances of generating crystals and patch glowstone crystals not generating.",
-		"1.1.1": "1.20.1 backport of 1.1.0."
+		"1.1.1": "1.20.1 backport of 1.1.0.",
+		"1.2.0": "Add quartz crystal"
 	},
 	"promos": {
-		"1.20.1-latest": "1.1.1",
-		"1.20.1-recommended": "1.1.1",
-		"1.20.2-latest": "1.1.1",
-		"1.20.2-recommended": "1.1.1",
-		"1.20.3-latest": "1.1.1",
-		"1.20.3-recommended": "1.1.1",
-		"1.20.4-latest": "1.1.1",
-		"1.20.4-recommended": "1.1.1"
+		"1.20.1-latest": "1.2.0",
+		"1.20.1-recommended": "1.2.0",
+		"1.20.2-latest": "1.2.0",
+		"1.20.2-recommended": "1.2.0",
+		"1.20.3-latest": "1.2.0",
+		"1.20.3-recommended": "1.2.0",
+		"1.20.4-latest": "1.2.0",
+		"1.20.4-recommended": "1.2.0"
 	}
 }
