@@ -1,5 +1,5 @@
 modLoader = "javafml"
-loaderVersion = "[47,)"
+loaderVersion = "[20.2,)"
 issueTrackerURL = "https://raw.githubusercontent.com/Killarexe/Crystals/master/forge/update.json"
 license = "CC0-1.0"
 
@@ -14,15 +14,15 @@ A small mod witch adds ores crystals...
 logoFile = "assets/crystals/icon.png"
 
 [[dependencies.crystals]]
-modId = "forge"
-mandatory = true
-versionRange = "[47,)"
+modId = "neoforge"
+type = "required"
+versionRange = "[20.2,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.crystals]]
 modId = "minecraft"
-mandatory = true
-versionRange = "[1.20.1,)"
+type = "required"
+versionRange = "[1.20.2,)"
 ordering = "NONE"
 side = "BOTH"
