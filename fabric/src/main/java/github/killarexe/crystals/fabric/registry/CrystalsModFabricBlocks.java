@@ -3,12 +3,12 @@ package github.killarexe.crystals.fabric.registry;
 import java.util.HashMap;
 
 import github.killarexe.crystals.CrystalsMod;
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.block.AmethystClusterBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class CrystalsModFabricBlocks {
 	public static final HashMap<String, Block> BLOCKS = new HashMap<String, Block>();
@@ -21,7 +21,7 @@ public class CrystalsModFabricBlocks {
 	public static final Block QUARTZ_CRYSTAL = createBlock("quartz_crystal");
 
 	private static Block createBlock(String id) {
-		Block block = new AmethystClusterBlock(5, 3, FabricBlockSettings.copyOf(Blocks.LARGE_AMETHYST_BUD));
+		Block block = new AmethystClusterBlock(5, 3, BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD));
 		BLOCKS.put(id, block);
 		return block;
 	}
