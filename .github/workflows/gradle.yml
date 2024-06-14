@@ -35,36 +35,36 @@ jobs:
     - name: Upload Fabric Mod
       uses: actions/upload-artifact@v4
       with:
-        name: crystals-fabric-1.2.1
-        path: /home/runner/work/Crystals/Crystals/fabric/build/libs/crystals-1.2.1.jar
+        name: crystals-fabric-1.2.2
+        path: /home/runner/work/Crystals/Crystals/fabric/build/libs/crystals-fabric-1.2.2.jar
         retention-days: 7
     - name: Upload Fabric Mod Sources
       uses: actions/upload-artifact@v4
       with:
-        name: crystals-fabric-1.2.1-sources
-        path: /home/runner/work/Crystals/Crystals/fabric/build/libs/crystals-1.2.1-sources.jar
+        name: crystals-fabric-1.2.2-sources
+        path: /home/runner/work/Crystals/Crystals/fabric/build/libs/crystals-fabric-1.2.2-sources.jar
         retention-days: 7
     - name: Upload Fabric Mod Dev Shadow
       uses: actions/upload-artifact@v4
       with:
-        name: crystals-fabric-1.2.1-dev-shadow
-        path: /home/runner/work/Crystals/Crystals/fabric/build/libs/crystals-1.2.1-dev-shadow.jar
+        name: crystals-fabric-1.2.2-dev-shadow
+        path: /home/runner/work/Crystals/Crystals/fabric/build/libs/crystals-fabric-1.2.2-dev-shadow.jar
         retention-days: 7
     - name: Upload NeoForge Mod
       uses: actions/upload-artifact@v4
       with:
-        name: crystals-neoforge-1.2.1
-        path: /home/runner/work/Crystals/Crystals/neoforge/build/libs/crystals-1.2.1.jar
+        name: crystals-neoforge-1.2.2
+        path: /home/runner/work/Crystals/Crystals/neoforge/build/libs/crystals-neoforge-1.2.2.jar
         retention-days: 7
     - name: Upload NeoForge Mod Sources
       uses: actions/upload-artifact@v4
       with:
-        name: crystals-neoforge-1.2.1-sources
-        path: /home/runner/work/Crystals/Crystals/neoforge/build/libs/crystals-1.2.1-sources.jar
+        name: crystals-neoforge-1.2.2-sources
+        path: /home/runner/work/Crystals/Crystals/neoforge/build/libs/crystals-neoforge-1.2.2-sources.jar
         retention-days: 7
     - name: Upload NeoForge Mod Dev Shadow
       uses: actions/upload-artifact@v4
       with:
-        name: crystals-neoforge-1.2.1-dev-shadow
-        path: /home/runner/work/Crystals/Crystals/neoforge/build/libs/crystals-1.2.1-dev-shadow.jar
+        name: crystals-neoforge-1.2.2-dev-shadow
+        path: /home/runner/work/Crystals/Crystals/neoforge/build/libs/crystals-neoforge-1.2.2-dev-shadow.jar
         retention-days: 7
