@@ -29,38 +29,38 @@ jobs:
         java-version: '21'
         distribution: 'temurin'
     - name: Build with Gradle
-      uses: gradle/gradle-build-action@bd5760595778326ba7f1441bcf7e88b49de61a25 # v2.6.0
+      uses: gradle/gradle-build-action@v3.4.2
       with:
         arguments: build
     - name: Upload Fabric Mod
       uses: actions/upload-artifact@v4
       with:
         name: crystals-fabric-1.2.2
-        path: /home/runner/work/Crystals/Crystals/fabric/build/libs/crystals-fabric-1.2.2.jar
+        path: ./fabric/build/libs/crystals-fabric-1.2.2.jar
         retention-days: 7
     - name: Upload Fabric Mod Sources
       uses: actions/upload-artifact@v4
       with:
         name: crystals-fabric-1.2.2-sources
-        path: /home/runner/work/Crystals/Crystals/fabric/build/libs/crystals-fabric-1.2.2-sources.jar
+        path: ./fabric/build/libs/crystals-fabric-1.2.2-sources.jar
         retention-days: 7
     - name: Upload Fabric Mod Dev Shadow
       uses: actions/upload-artifact@v4
       with:
         name: crystals-fabric-1.2.2-dev-shadow
-        path: /home/runner/work/Crystals/Crystals/fabric/build/libs/crystals-fabric-1.2.2-dev-shadow.jar
+        path: ./fabric/build/libs/crystals-fabric-1.2.2-dev-shadow.jar
         retention-days: 7
     - name: Upload NeoForge Mod
       uses: actions/upload-artifact@v4
       with:
         name: crystals-neoforge-1.2.2
-        path: /home/runner/work/Crystals/Crystals/neoforge/build/libs/crystals-neoforge-1.2.2.jar
+        path: ./neoforge/build/libs/crystals-neoforge-1.2.2.jar
         retention-days: 7
     - name: Upload NeoForge Mod Sources
       uses: actions/upload-artifact@v4
       with:
         name: crystals-neoforge-1.2.2-sources
-        path: /home/runner/work/Crystals/Crystals/neoforge/build/libs/crystals-neoforge-1.2.2-sources.jar
+        path: ./neoforge/build/libs/crystals-neoforge-1.2.2-sources.jar
         retention-days: 7
     - name: Upload NeoForge Mod Dev Shadow
       uses: actions/upload-artifact@v4
