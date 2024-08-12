@@ -9,7 +9,8 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.WorldGenLevel;
-import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
@@ -27,48 +28,37 @@ public class CrystalFeature extends Feature<CrystalFeatureConfig> {
 		WorldGenLevel level = featurePlaceContext.level();
 		CrystalFeatureConfig config = featurePlaceContext.config();
 		BlockPos origin = featurePlaceContext.origin();
-		
 		TargetBlockState targetBlockState = config.target();
-		
 		RandomSource random = level.getRandom();
-		
-		if(!level.getBlockState(origin).isAir()) {
+		BlockState currentState = level.getBlockState(origin);
+		boolean isWaterLogged = currentState.is(Blocks.WATER);
+
+		if(!(currentState.isAir() || isWaterLogged)) {
 			return false;
 		}
-		
+
 		Optional<Direction> direction = getDirection(origin, targetBlockState, level, random);
 		if(direction.isPresent()) {
-			try {
-				level.setBlock(origin, targetBlockState.state.setValue(BlockStateProperties.FACING, direction.get()), Block.UPDATE_ALL_IMMEDIATE);
-				return true;
-			}catch (Exception e) {
-				e.printStackTrace();
-			}
+			level.setBlock(origin, targetBlockState.state.setValue(BlockStateProperties.FACING, direction.get()).setValue(BlockStateProperties.WATERLOGGED, isWaterLogged), 3);
+			level.getChunk(origin).markPosForPostprocessing(origin);
+			return true;
 		}
 		return false;
 	}
-	
+
 	private Optional<Direction> getDirection(BlockPos origin, TargetBlockState targetBlockState, WorldGenLevel level, RandomSource source) {
-		ArrayList<Direction> availableDirections = new ArrayList<Direction>();
+		ArrayList<Direction> availableDirections = new ArrayList<>();
 		RuleTest rule = targetBlockState.target;
-		if(rule.test(level.getBlockState(origin.north()), source)) {
-			availableDirections.add(Direction.SOUTH);
+
+		for (Direction direction : Direction.values()) {
+			BlockPos adjacentPos = origin.relative(direction);
+			if (level.hasChunkAt(adjacentPos)) {
+				if (rule.test(level.getBlockState(adjacentPos), source)) {
+					availableDirections.add(direction.getOpposite());
+				}
+			}
 		}
-		if(rule.test(level.getBlockState(origin.south()), source)) {
-			availableDirections.add(Direction.NORTH);
-		}
-		if(rule.test(level.getBlockState(origin.west()), source)) {
-			availableDirections.add(Direction.EAST);
-		}
-		if(rule.test(level.getBlockState(origin.east()), source)) {
-			availableDirections.add(Direction.WEST);
-		}
-		if(rule.test(level.getBlockState(origin.above()), source)) {
-			availableDirections.add(Direction.DOWN);
-		}
-		if(rule.test(level.getBlockState(origin.below()), source)) {
-			availableDirections.add(Direction.UP);
-		}
+
 		if(availableDirections.isEmpty()) {
 			return Optional.empty();
 		}
