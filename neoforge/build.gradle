@@ -16,13 +16,14 @@ configurations {
 }
 
 repositories {
-    maven { url "https://maven.neoforged.net/" }
+    maven {
+        name = "NeoForged"
+        url = "https://maven.neoforged.net/"
+    }
 }
 
 dependencies {
     neoForge "net.neoforged:neoforge:${rootProject.neoforge_version}"
-
-    //modApi "dev.architectury:architectury-neoforge:${rootProject.architectury_version}"
 
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionNeoForge")) { transitive = false }

@@ -1,8 +1,8 @@
 {
-	"block.crystals.diamond_crystal": "Diamond Crystal",
-	"block.crystals.emerald_crystal": "Emerald Crystal",
-	"block.crystals.lapis_crystal": "Lapis Crystal",
-	"block.crystals.redstone_crystal": "Redstone Crystal",
-	"block.crystals.glowstone_crystal": "Glowstone Crystal",
-	"block.crystals.quartz_crystal": "Quartz Crystal"
+	"item.crystals.diamond_crystal": "Diamond Crystal",
+	"item.crystals.emerald_crystal": "Emerald Crystal",
+	"item.crystals.lapis_crystal": "Lapis Crystal",
+	"item.crystals.redstone_crystal": "Redstone Crystal",
+	"item.crystals.glowstone_crystal": "Glowstone Crystal",
+	"item.crystals.quartz_crystal": "Quartz Crystal"
 }

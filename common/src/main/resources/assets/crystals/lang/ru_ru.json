@@ -1,8 +1,8 @@
 {
-	"block.crystals.diamond_crystal": "Алмазный кристалл",
-	"block.crystals.emerald_crystal": "Изумрудный кристалл",
-	"block.crystals.lapis_crystal": "Лазуритовый кристалл",
-	"block.crystals.redstone_crystal": "Редстоуновый кристалл",
-	"block.crystals.glowstone_crystal": "Светокаменный кристалл",
-	"block.crystals.quartz_crystal": "Кварцевый кристалл"
+	"item.crystals.diamond_crystal": "Алмазный кристалл",
+	"item.crystals.emerald_crystal": "Изумрудный кристалл",
+	"item.crystals.lapis_crystal": "Лазуритовый кристалл",
+	"item.crystals.redstone_crystal": "Редстоуновый кристалл",
+	"item.crystals.glowstone_crystal": "Светокаменный кристалл",
+	"item.crystals.quartz_crystal": "Кварцевый кристалл"
 }
