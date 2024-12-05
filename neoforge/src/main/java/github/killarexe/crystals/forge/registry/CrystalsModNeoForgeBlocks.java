@@ -1,6 +1,7 @@
 package github.killarexe.crystals.forge.registry;
 
 import github.killarexe.crystals.CrystalsMod;
+import github.killarexe.crystals.blocks.RedstoneClusterBlock;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
@@ -19,32 +20,32 @@ public class CrystalsModNeoForgeBlocks {
 	public static final Supplier<Block> DIAMOND_CRYSTAL = createBlock(
 			"diamond_crystal",
 			properties -> () -> new AmethystClusterBlock(5, 3, properties),
-			BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD)
+			BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD).requiresCorrectToolForDrops()
 	);
 	public static final Supplier<Block> EMERALD_CRYSTAL = createBlock(
 			"emerald_crystal",
 			properties -> () -> new AmethystClusterBlock(5, 3, properties),
-			BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD)
+			BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD).requiresCorrectToolForDrops()
 	);
 	public static final Supplier<Block> LAPIS_CRYSTAL = createBlock(
 			"lapis_crystal",
 			properties -> () -> new AmethystClusterBlock(5, 3, properties),
-			BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD)
+			BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD).requiresCorrectToolForDrops()
 	);
 	public static final Supplier<Block> REDSTONE_CRYSTAL = createBlock(
 			"redstone_crystal",
-			properties -> () -> new AmethystClusterBlock(5, 3, properties),
-			BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD)
+			properties -> () -> new RedstoneClusterBlock(5, 3, properties),
+			BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD).requiresCorrectToolForDrops()
 	);
 	public static final Supplier<Block> GLOWSTONE_CRYSTAL = createBlock(
 			"glowstone_crystal",
 			properties -> () -> new AmethystClusterBlock(5, 3, properties),
-			BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD).lightLevel(_state -> 10)
+			BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD).requiresCorrectToolForDrops().lightLevel(_state -> 10)
 	);
 	public static final Supplier<Block> QUARTZ_CRYSTAL = createBlock(
 			"quartz_crystal",
 			properties -> () -> new AmethystClusterBlock(5, 3, properties),
-			BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD)
+			BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD).requiresCorrectToolForDrops()
 	);
 
 	private static <T extends Block> Supplier<T> createBlock(String id, Function<BlockBehaviour.Properties, Supplier<T>> function, BlockBehaviour.Properties properties) {

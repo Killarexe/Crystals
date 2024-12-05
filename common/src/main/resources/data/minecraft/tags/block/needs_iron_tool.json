@@ -1,4 +1,5 @@
 {
+  "replace": false,
   "values": [
     "crystals:diamond_crystal",
     "crystals:emerald_crystal",
