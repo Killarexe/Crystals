@@ -1,6 +1,5 @@
 package github.killarexe.crystals.forge.registry;
 
-
 import github.killarexe.crystals.CrystalsMod;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
