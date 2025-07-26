@@ -9,7 +9,6 @@ import net.minecraft.client.renderer.chunk.ChunkSectionLayer;
 
 @Environment(EnvType.CLIENT)
 public class CrystalsModFabricClient implements ClientModInitializer{
-
 	@Override
 	public void onInitializeClient() {
 		CrystalsModFabricBlocks.BLOCKS.values().forEach(block -> {
