@@ -5,7 +5,8 @@
 	},
 	"1.21": {
 		"1.2.2": "Update to Minecraft 1.21",
-		"1.2.3": "Improve crystal generation. Add Russian translation credits to Alexender317"
+		"1.2.3": "Improve crystal generation. Add Russian translation credits to Alexender317",
+		"1.2.3p": "Patch crystals blocks not looting"
 	},
 	"1.21.2": {
 		"1.2.4": "Update to Minecraft 1.21.2"
@@ -20,10 +21,10 @@
 	"promos": {
 		"1.20.6-latest": "1.2.1",
 		"1.20.6-recommended": "1.2.1",
-		"1.21-latest": "1.2.3",
-		"1.21-recommended": "1.2.3",
-		"1.21.1-latest": "1.2.3",
-		"1.21.1-recommended": "1.2.3",
+		"1.21-latest": "1.2.3p",
+		"1.21-recommended": "1.2.3p",
+		"1.21.1-latest": "1.2.3p",
+		"1.21.1-recommended": "1.2.3p",
 		"1.21.2-lastest": "1.2.4",
 		"1.21.2-recommended": "1.2.4",
 		"1.21.3-lastest": "1.2.4",
