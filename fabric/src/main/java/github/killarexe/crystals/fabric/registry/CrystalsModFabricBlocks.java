@@ -11,7 +11,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class CrystalsModFabricBlocks {
-	public static final HashMap<String, Block> BLOCKS = new HashMap<String, Block>();
+	public static final HashMap<String, Block> BLOCKS = new HashMap<>();
 	
 	public static final Block DIAMOND_CRYSTAL = createBlock("diamond_crystal");
 	public static final Block EMERALD_CRYSTAL = createBlock("emerald_crystal");
@@ -21,7 +21,7 @@ public class CrystalsModFabricBlocks {
 	public static final Block QUARTZ_CRYSTAL = createBlock("quartz_crystal");
 
 	private static Block createBlock(String id) {
-		Block block = new AmethystClusterBlock(5, 3, BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD));
+		Block block = new AmethystClusterBlock(5, 3, BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD).requiresCorrectToolForDrops());
 		BLOCKS.put(id, block);
 		return block;
 	}

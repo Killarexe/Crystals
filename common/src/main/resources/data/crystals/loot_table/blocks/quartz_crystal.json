@@ -2,7 +2,6 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "rolls": 1,
       "bonus_rolls": 0,
       "entries": [
         {
@@ -10,41 +9,45 @@
           "children": [
             {
               "type": "minecraft:item",
-              "name": "crystals:lapis_crystal",
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",
                   "predicate": {
-                    "enchantments": [
-                      {
-                        "enchantment": "minecraft:silk_touch",
-                        "levels": {
-                          "min": 1
+                    "predicates": {
+                      "minecraft:enchantments": [
+                        {
+                          "enchantments": "minecraft:silk_touch",
+                          "levels": {
+                            "min": 1
+                          }
                         }
-                      }
-                    ]
+                      ]
+                    }
                   }
                 }
-              ]
+              ],
+              "name": "crystals:quartz_crystal"
             },
             {
               "type": "minecraft:item",
-              "name": "minecraft:lapis_lazuli",
               "functions": [
                 {
-                  "function": "minecraft:apply_bonus",
                   "enchantment": "minecraft:fortune",
-                  "formula": "minecraft:ore_drops"
+                  "formula": "minecraft:ore_drops",
+                  "function": "minecraft:apply_bonus"
                 },
                 {
                   "function": "minecraft:explosion_decay"
                 }
-              ]
+              ],
+              "name": "minecraft:quartz"
             }
           ]
         }
-      ]
+      ],
+      "rolls": 1
     }
   ],
-  "random_sequence": "crystals:blocks/lapis_crystal"
+  "random_sequence": "crystals:quartz_crystal"
 }
+

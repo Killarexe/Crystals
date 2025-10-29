@@ -13,10 +13,10 @@ import java.util.function.Supplier;
 public class CrystalsModNeoForgeBlocks {
 	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(BuiltInRegistries.BLOCK, CrystalsMod.MOD_ID);
 	
-	public static final Supplier<Block> DIAMOND_CRYSTAL = BLOCKS.register("diamond_crystal", () -> new AmethystClusterBlock(5, 3, BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD)));
-	public static final Supplier<Block> EMERALD_CRYSTAL = BLOCKS.register("emerald_crystal", () -> new AmethystClusterBlock(5, 3, BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD)));
-	public static final Supplier<Block> LAPIS_CRYSTAL = BLOCKS.register("lapis_crystal", () -> new AmethystClusterBlock(5, 3, BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD)));
-	public static final Supplier<Block> REDSTONE_CRYSTAL = BLOCKS.register("redstone_crystal", () -> new AmethystClusterBlock(5, 3, BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD)));
-	public static final Supplier<Block> GLOWSTONE_CRYSTAL = BLOCKS.register("glowstone_crystal", () -> new AmethystClusterBlock(5, 3, BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD)));
-	public static final Supplier<Block> QUARTZ_CRYSTAL = BLOCKS.register("quartz_crystal", () -> new AmethystClusterBlock(5, 3, BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD)));
+	public static final Supplier<Block> DIAMOND_CRYSTAL = BLOCKS.register("diamond_crystal", () -> new AmethystClusterBlock(5, 3, BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD).requiresCorrectToolForDrops()));
+	public static final Supplier<Block> EMERALD_CRYSTAL = BLOCKS.register("emerald_crystal", () -> new AmethystClusterBlock(5, 3, BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD).requiresCorrectToolForDrops()));
+	public static final Supplier<Block> LAPIS_CRYSTAL = BLOCKS.register("lapis_crystal", () -> new AmethystClusterBlock(5, 3, BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD).requiresCorrectToolForDrops()));
+	public static final Supplier<Block> REDSTONE_CRYSTAL = BLOCKS.register("redstone_crystal", () -> new AmethystClusterBlock(5, 3, BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD).requiresCorrectToolForDrops()));
+	public static final Supplier<Block> GLOWSTONE_CRYSTAL = BLOCKS.register("glowstone_crystal", () -> new AmethystClusterBlock(5, 3, BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD).requiresCorrectToolForDrops()));
+	public static final Supplier<Block> QUARTZ_CRYSTAL = BLOCKS.register("quartz_crystal", () -> new AmethystClusterBlock(5, 3, BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD).requiresCorrectToolForDrops()));
 }
