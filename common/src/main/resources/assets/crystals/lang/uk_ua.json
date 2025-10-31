@@ -1,0 +1,9 @@
+{
+	"item.crystals.diamond_crystal": "Діамантовий кристал",
+	"item.crystals.emerald_crystal": "Смарагдовий кристал",
+	"item.crystals.lapis_crystal": "Лазуритовий кристал",
+	"item.crystals.redstone_crystal": "Редстоуновий кристал",
+	"item.crystals.glowstone_crystal": "Світлокам'яний кристал",
+	"item.crystals.quartz_crystal": "Кварцовий кристал",
+  "modmenu.descriptionTranslation.crystals": "Простий мод, що додає кристали руд"
+}
