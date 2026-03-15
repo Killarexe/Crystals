@@ -1,5 +1,6 @@
 package github.killarexe.crystals.fabric.client;
 
+import github.killarexe.crystals.blocks.EnrichedOre;
 import github.killarexe.crystals.fabric.registry.CrystalsModFabricBlocks;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
@@ -12,7 +13,9 @@ public class CrystalsModFabricClient implements ClientModInitializer{
 	@Override
 	public void onInitializeClient() {
 		CrystalsModFabricBlocks.BLOCKS.values().forEach(block -> {
-			BlockRenderLayerMap.putBlock(block, ChunkSectionLayer.CUTOUT);
+      if (!(block instanceof EnrichedOre)) {
+        BlockRenderLayerMap.putBlock(block, ChunkSectionLayer.CUTOUT);
+      }
 		});
 	}
 }

@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.function.Function;
 
 import github.killarexe.crystals.CrystalsMod;
+import github.killarexe.crystals.blocks.EnrichedOre;
 import github.killarexe.crystals.blocks.RedstoneClusterBlock;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -47,6 +48,32 @@ public class CrystalsModFabricBlocks {
 			properties -> new AmethystClusterBlock(5, 3, properties),
 			BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD).requiresCorrectToolForDrops()
 	);
+
+  public static final Block ENRICHED_DIAMOND_ORE = createBlock(
+      "enriched_diamond_ore",
+      properties -> new EnrichedOre(properties, DIAMOND_CRYSTAL),
+      BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_ORE)
+  );
+  /*public static final Block ENRICHED_EMERALD_ORE = createBlock(
+      "enriched_emerald_ore",
+      properties -> new EnrichedOre(properties, EMERALD_CRYSTAL),
+      BlockBehaviour.Properties.ofFullCopy(Blocks.EMERALD_ORE)
+  );
+  public static final Block ENRICHED_LAPIS_ORE = createBlock(
+      "enriched_lapis_ore",
+      properties -> new EnrichedOre(properties, LAPIS_CRYSTAL),
+      BlockBehaviour.Properties.ofFullCopy(Blocks.LAPIS_BLOCK)
+  );
+  public static final Block ENRICHED_REDSTONE_ORE = createBlock(
+      "enriched_redstone_ore",
+      properties -> new EnrichedOre(properties, REDSTONE_CRYSTAL),
+      BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_ORE)
+  );
+  public static final Block ENRICHED_QUARTZ_ORE = createBlock(
+      "enriched_quartz_ore",
+      properties -> new EnrichedOre(properties, QUARTZ_CRYSTAL),
+      BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_QUARTZ_ORE)
+  );*/
 
 	private static Block createBlock(String id, Function<BlockBehaviour.Properties, Block> function, BlockBehaviour.Properties properties) {
 		ResourceKey<Block> blockKey = ResourceKey.create(Registries.BLOCK, CrystalsMod.id(id));
