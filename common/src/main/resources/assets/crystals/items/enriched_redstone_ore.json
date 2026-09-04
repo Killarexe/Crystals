@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "crystals:block/enriched_redstone_ore"
+  }
+}

@@ -20,6 +20,9 @@
     ],
     "client": [
       "github.killarexe.crystals.fabric.client.CrystalsModFabricClient"
+    ],
+    "fabric-datagen": [
+      "github.killarexe.crystals.fabric.generation.data.CrystalsDataGenerator"
     ]
   },
   "depends": {

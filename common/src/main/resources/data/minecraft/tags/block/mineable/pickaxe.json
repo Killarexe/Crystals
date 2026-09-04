@@ -1,10 +1,33 @@
 {
   "values": [
+    "crystals:enriched_diamond_ore",
     "crystals:diamond_crystal",
+    "crystals:large_diamond_crystal",
+    "crystals:medium_diamond_crystal",
+    "crystals:small_diamond_crystal",
+    "crystals:enriched_emerald_ore",
     "crystals:emerald_crystal",
+    "crystals:large_emerald_crystal",
+    "crystals:medium_emerald_crystal",
+    "crystals:small_emerald_crystal",
+    "crystals:enriched_lapis_ore",
     "crystals:lapis_crystal",
-    "crystals:redstone_crystal",
+    "crystals:large_lapis_crystal",
+    "crystals:medium_lapis_crystal",
+    "crystals:small_lapis_crystal",
     "crystals:glowstone_crystal",
-    "crystals:quartz_crystal"
+    "crystals:large_glowstone_crystal",
+    "crystals:medium_glowstone_crystal",
+    "crystals:small_glowstone_crystal",
+    "crystals:enriched_redstone_ore",
+    "crystals:redstone_crystal",
+    "crystals:large_redstone_crystal",
+    "crystals:medium_redstone_crystal",
+    "crystals:small_redstone_crystal",
+    "crystals:enriched_quartz_ore",
+    "crystals:quartz_crystal",
+    "crystals:large_quartz_crystal",
+    "crystals:medium_quartz_crystal",
+    "crystals:small_quartz_crystal"
   ]
 }
