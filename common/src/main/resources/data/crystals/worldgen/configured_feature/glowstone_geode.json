@@ -16,14 +16,57 @@
         }
       },
       "inner_layer_provider": {
-        "type": "minecraft:simple_state_provider",
+        "type": "minecraft:noise_provider",
         "state": {
           "Name": "minecraft:glowstone"
-        }
+        },
+        "seed": -829682570,
+        "noise": {
+          "firstOctave": 1,
+          "amplitudes": [
+            1
+          ]
+        },
+        "scale": 2,
+        "states": [
+          {
+            "Name": "minecraft:glowstone"
+          },
+          {
+            "Name": "minecraft:netherrack"
+          },
+          {
+            "Name": "minecraft:netherrack"
+          },
+          {
+            "Name": "minecraft:netherrack"
+          }
+        ]
       },
       "inner_placements": [
         {
           "Name": "crystals:glowstone_crystal",
+          "Properties": {
+            "facing": "up",
+            "waterlogged": "false"
+          }
+        },
+        {
+          "Name": "crystals:large_glowstone_crystal",
+          "Properties": {
+            "facing": "up",
+            "waterlogged": "false"
+          }
+        },
+        {
+          "Name": "crystals:medium_glowstone_crystal",
+          "Properties": {
+            "facing": "up",
+            "waterlogged": "false"
+          }
+        },
+        {
+          "Name": "crystals:small_glowstone_crystal",
           "Properties": {
             "facing": "up",
             "waterlogged": "false"

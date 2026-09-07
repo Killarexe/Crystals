@@ -1,9 +1,9 @@
 {
-  "feature": "crystals:redstone_geode",
+  "feature": "crystals:diamond_geode",
   "placement": [
     {
       "type": "minecraft:rarity_filter",
-      "chance": 40
+      "chance": 50
     },
     {
       "type": "minecraft:in_square"
@@ -13,7 +13,7 @@
       "height": {
         "type": "minecraft:uniform",
         "max_inclusive": {
-          "absolute": 28
+          "absolute": 24
         },
         "min_inclusive": {
           "above_bottom": 6

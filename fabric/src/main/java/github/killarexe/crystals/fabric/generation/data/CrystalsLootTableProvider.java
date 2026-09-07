@@ -25,7 +25,7 @@ public class CrystalsLootTableProvider extends FabricBlockLootTableProvider {
     add(CrystalsModFabricBlocks.GLOWSTONE_CRYSTAL, createOreDrop(CrystalsModFabricBlocks.GLOWSTONE_CRYSTAL, Items.GLOWSTONE_DUST));
     add(CrystalsModFabricBlocks.ENRICHED_REDSTONE_ORE, createOreDrop(CrystalsModFabricBlocks.ENRICHED_REDSTONE_ORE, Items.REDSTONE));
     add(CrystalsModFabricBlocks.REDSTONE_CRYSTAL, createOreDrop(CrystalsModFabricBlocks.REDSTONE_CRYSTAL, Items.REDSTONE));
-    add(CrystalsModFabricBlocks.ENRICHED_QUARTZ_ORE, createOreDrop(CrystalsModFabricBlocks.ENRICHED_QUARTZ_ORE, Items.QUARTZ));
+    add(CrystalsModFabricBlocks.ENRICHED_NETHER_QUARTZ_ORE, createOreDrop(CrystalsModFabricBlocks.ENRICHED_NETHER_QUARTZ_ORE, Items.QUARTZ));
     add(CrystalsModFabricBlocks.QUARTZ_CRYSTAL, createOreDrop(CrystalsModFabricBlocks.QUARTZ_CRYSTAL, Items.QUARTZ));
   }
 

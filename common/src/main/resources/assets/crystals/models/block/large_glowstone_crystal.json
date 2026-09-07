@@ -2,5 +2,6 @@
   "parent": "minecraft:block/cross",
   "textures": {
     "cross": "crystals:block/large_glowstone_crystal"
-  }
+  },
+  "render_type": "cutout"
 }

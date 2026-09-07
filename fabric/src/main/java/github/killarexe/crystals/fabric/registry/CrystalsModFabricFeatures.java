@@ -21,9 +21,12 @@ public class CrystalsModFabricFeatures {
 	public static final ResourceKey<PlacedFeature> GLOWSTONE_CRYSTALS_FEATURE = createKey("glowstone_crystals");
 	public static final ResourceKey<PlacedFeature> QUARTZ_CRYSTALS_FEATURE = createKey("quartz_crystals");
 
+	public static final ResourceKey<PlacedFeature> DIAMOND_GEODE = createKey("diamond_geode");
+	public static final ResourceKey<PlacedFeature> EMERALD_GEODE = createKey("emerald_geode");
+	public static final ResourceKey<PlacedFeature> LAPIS_GEODE = createKey("lapis_geode");
+	public static final ResourceKey<PlacedFeature> GLOWSTONE_GEODE = createKey("glowstone_geode");
 	public static final ResourceKey<PlacedFeature> REDSTONE_GEODE = createKey("redstone_geode");
 	public static final ResourceKey<PlacedFeature> QUARTZ_GEODE = createKey("quartz_geode");
-	public static final ResourceKey<PlacedFeature> GLOWSTONE_GEODE = createKey("glowstone_geode");
 
 	private static ResourceKey<PlacedFeature> createKey(String id) {
 		return ResourceKey.create(Registries.PLACED_FEATURE, CrystalsMod.id(id));
@@ -39,8 +42,11 @@ public class CrystalsModFabricFeatures {
 		BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(), GenerationStep.Decoration.UNDERGROUND_DECORATION, GLOWSTONE_CRYSTALS_FEATURE);
 		BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(), GenerationStep.Decoration.UNDERGROUND_DECORATION, QUARTZ_CRYSTALS_FEATURE);
 
+		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.UNDERGROUND_DECORATION, DIAMOND_GEODE);
+		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.UNDERGROUND_DECORATION, EMERALD_GEODE);
+		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.UNDERGROUND_DECORATION, LAPIS_GEODE);
+		BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(), GenerationStep.Decoration.UNDERGROUND_DECORATION, GLOWSTONE_GEODE);
 		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.UNDERGROUND_DECORATION, REDSTONE_GEODE);
 		BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(), GenerationStep.Decoration.UNDERGROUND_DECORATION, QUARTZ_GEODE);
-		BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(), GenerationStep.Decoration.UNDERGROUND_DECORATION, GLOWSTONE_GEODE);
 	}
 }

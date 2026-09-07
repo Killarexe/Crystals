@@ -2,5 +2,6 @@
   "parent": "minecraft:block/cross",
   "textures": {
     "cross": "crystals:block/small_redstone_crystal"
-  }
+  },
+  "render_type": "cutout"
 }

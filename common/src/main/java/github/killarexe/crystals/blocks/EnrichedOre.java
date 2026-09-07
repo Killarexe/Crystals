@@ -39,43 +39,37 @@ public class EnrichedOre extends Block {
     BlockPos above = blockPos.above();
     Optional<BlockPos> stalactitePosition = Optional.ofNullable(PointedDripstoneBlock.findStalactiteTipAboveCauldron(serverLevel, above));
     if (stalactitePosition.isEmpty()) {
-      CrystalsMod.LOGGER.info("No stalactite.");
       return;
     }
 
     Fluid fluid = PointedDripstoneBlock.getCauldronFillFluidType(serverLevel, stalactitePosition.get());
     if (!(fluid == Fluids.WATER || fluid == Fluids.FLOWING_WATER)) {
-      CrystalsMod.LOGGER.info("No water.");
       return;
     }
 
     Optional<HashMap<Block, Pair<Block, Float>>> crystallisationMap = Optional.ofNullable(CRYSTALLISATION_MAP.get(this));
     if (crystallisationMap.isEmpty()) {
-      CrystalsMod.LOGGER.info("No map found.");
       return;
     }
 
     BlockState aboveState = serverLevel.getBlockState(above);
     if (aboveState.isAir() && !BuddingAmethystBlock.canClusterGrowAtState(aboveState)) {
-      CrystalsMod.LOGGER.info("Not enough space to create.");
       return;
     }
 
     Optional<Pair<Block, Float>> nextBlock = Optional.ofNullable(crystallisationMap.get().get(aboveState.getBlock()));
     if (nextBlock.isEmpty()) {
-      CrystalsMod.LOGGER.info("No next block.");
       return;
     }
 
     Pair<Block, Float> pair = nextBlock.get();
     if (randomSource.nextFloat() > pair.getB()) {
-      CrystalsMod.LOGGER.info("No chance.");
       return;
     }
 
     serverLevel.setBlock(above, pair.getA().defaultBlockState(), Block.UPDATE_ALL);
 
-    if (!crystallisationMap.get().containsKey(aboveState.getBlock()) && randomSource.nextFloat() <= oreChance) {
+    if (!crystallisationMap.get().containsKey(pair.getA()) && randomSource.nextFloat() <= oreChance) {
       serverLevel.setBlock(blockPos, oreBlock.defaultBlockState(), Block.UPDATE_ALL);
     }
   }

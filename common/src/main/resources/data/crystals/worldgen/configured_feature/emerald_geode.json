@@ -5,7 +5,7 @@
       "alternate_inner_layer_provider": {
         "type": "minecraft:simple_state_provider",
         "state": {
-          "Name": "crystals:enriched_redstone_ore"
+          "Name": "crystals:enriched_emerald_ore"
         }
       },
       "cannot_replace": "#minecraft:features_cannot_replace",
@@ -18,9 +18,9 @@
       "inner_layer_provider": {
         "type": "minecraft:noise_provider",
         "state": {
-          "Name": "minecraft:redstone_ore"
+          "Name": "minecraft:emerald_ore"
         },
-        "seed": -2127118466,
+        "seed": 1845992209,
         "noise": {
           "firstOctave": 1,
           "amplitudes": [1]
@@ -28,7 +28,13 @@
         "scale": 2,
         "states": [
           {
-            "Name": "minecraft:redstone_ore"
+            "Name": "minecraft:emerald_ore"
+          },
+          {
+            "Name": "minecraft:stone"
+          },
+          {
+            "Name": "minecraft:stone"
           },
           {
             "Name": "minecraft:stone"
@@ -37,28 +43,28 @@
       },
       "inner_placements": [
         {
-          "Name": "crystals:redstone_crystal",
+          "Name": "crystals:emerald_crystal",
           "Properties": {
             "facing": "up",
             "waterlogged": "false"
           }
         },
         {
-          "Name": "crystals:large_redstone_crystal",
+          "Name": "crystals:large_emerald_crystal",
           "Properties": {
             "facing": "up",
             "waterlogged": "false"
           }
         },
         {
-          "Name": "crystals:medium_redstone_crystal",
+          "Name": "crystals:medium_emerald_crystal",
           "Properties": {
             "facing": "up",
             "waterlogged": "false"
           }
         },
         {
-          "Name": "crystals:small_redstone_crystal",
+          "Name": "crystals:small_emerald_crystal",
           "Properties": {
             "facing": "up",
             "waterlogged": "false"

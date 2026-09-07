@@ -20,9 +20,9 @@ Steps to reproduce the behavior:
 If applicable, add screenshots to help explain your problem.
 
 **Desktop (please complete the following information):**
- - Forge/Fabric Verison: 
+ - NeoForge/Forge/Fabric Verison: 
  - OS:
- - Crystals Versions:
+ - Mod version:
 
 **Additional context**
 Add any other context about the problem here.

@@ -1,12 +1,10 @@
 package github.killarexe.crystals.fabric.generation.data;
 
-import github.killarexe.crystals.CrystalsMod;
 import github.killarexe.crystals.fabric.registry.CrystalsModFabricBlocks;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
-import net.minecraft.client.data.models.model.ModelTemplates;
 
 public class CrystalsModelProvider extends FabricModelProvider {
 
@@ -65,7 +63,7 @@ public class CrystalsModelProvider extends FabricModelProvider {
     blockStateModelGenerator.registerSimpleFlatItemModel(CrystalsModFabricBlocks.MEDIUM_REDSTONE_CRYSTAL);
     blockStateModelGenerator.registerSimpleFlatItemModel(CrystalsModFabricBlocks.SMALL_REDSTONE_CRYSTAL);
 
-    blockStateModelGenerator.createTrivialCube(CrystalsModFabricBlocks.ENRICHED_QUARTZ_ORE);
+    blockStateModelGenerator.createTrivialCube(CrystalsModFabricBlocks.ENRICHED_NETHER_QUARTZ_ORE);
     blockStateModelGenerator.createAmethystCluster(CrystalsModFabricBlocks.QUARTZ_CRYSTAL);
     blockStateModelGenerator.createAmethystCluster(CrystalsModFabricBlocks.LARGE_QUARTZ_CRYSTAL);
     blockStateModelGenerator.createAmethystCluster(CrystalsModFabricBlocks.MEDIUM_QUARTZ_CRYSTAL);

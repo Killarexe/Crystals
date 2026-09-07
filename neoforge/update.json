@@ -16,7 +16,8 @@
 		"1.3.0": "Add Redstone, Quartz & Glowstone"
 	},
 	"1.21.6": {
-		"1.3.1": "Update to Minecraft 1.21.6"
+		"1.3.1": "Update to Minecraft 1.21.6",
+		"1.4.0": "Add enriched ore, improves geodes, add growing states for ore crystals"
 	},
 	"promos": {
 		"1.20.6-latest": "1.2.1",
@@ -38,6 +39,12 @@
 		"1.21.7-lastest": "1.3.1",
 		"1.21.7-recommended": "1.3.1",
 		"1.21.8-lastest": "1.3.1",
-		"1.21.8-recommended": "1.3.1"
+		"1.21.8-recommended": "1.3.1",
+		"1.21.9-lastest": "1.3.1",
+		"1.21.9-recommended": "1.3.1",
+		"1.21.10-lastest": "1.3.1",
+		"1.21.10-recommended": "1.3.1",
+		"1.21.11-lastest": "1.3.1",
+		"1.21.11-recommended": "1.3.1"
 	}
 }

@@ -2,5 +2,6 @@
   "parent": "minecraft:block/cross",
   "textures": {
     "cross": "crystals:block/small_emerald_crystal"
-  }
+  },
+  "render_type": "cutout"
 }

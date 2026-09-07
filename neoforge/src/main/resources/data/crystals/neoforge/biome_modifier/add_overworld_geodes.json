@@ -2,6 +2,9 @@
 	"type": "neoforge:add_features",
 	"biomes": "#minecraft:is_overworld",
 	"features": [
+		"crystals:diamond_geode",
+		"crystals:emerald_geode",
+		"crystals:lapis_geode",
 		"crystals:redstone_geode"
 	],
 	"step": "underground_decoration"

@@ -16,7 +16,6 @@ import net.minecraft.world.level.block.AmethystClusterBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import oshi.util.tuples.Pair;
 
 public class CrystalsModFabricBlocks {
 	public static final HashMap<String, Block> BLOCKS = new HashMap<>();
@@ -150,27 +149,27 @@ public class CrystalsModFabricBlocks {
 	//TODO: Balance values
   public static final Block ENRICHED_DIAMOND_ORE = createBlock(
       "enriched_diamond_ore",
-			properties -> new EnrichedOre(properties, Blocks.DIAMOND_ORE, 1.0f / 32.0f),
+			properties -> new EnrichedOre(properties, Blocks.DIAMOND_ORE, 1.0f / 4.0f),
       BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_ORE).randomTicks()
   );
 	public static final Block ENRICHED_EMERALD_ORE = createBlock(
 					"enriched_emerald_ore",
-					properties -> new EnrichedOre(properties, Blocks.EMERALD_ORE, 1.0f / 32.0f),
+					properties -> new EnrichedOre(properties, Blocks.EMERALD_ORE, 1.0f / 4.0f),
 					BlockBehaviour.Properties.ofFullCopy(Blocks.EMERALD_ORE).randomTicks()
 	);
 	public static final Block ENRICHED_LAPIS_ORE = createBlock(
 					"enriched_lapis_ore",
-					properties -> new EnrichedOre(properties, Blocks.LAPIS_ORE, 1.0f / 32.0f),
+					properties -> new EnrichedOre(properties, Blocks.LAPIS_ORE, 1.0f / 4.0f),
 					BlockBehaviour.Properties.ofFullCopy(Blocks.LAPIS_ORE).randomTicks()
 	);
 	public static final Block ENRICHED_REDSTONE_ORE = createBlock(
 					"enriched_redstone_ore",
-					properties -> new RedstoneEnrichedOre(properties, Blocks.REDSTONE_ORE, 1.0f / 32.0f),
+					properties -> new RedstoneEnrichedOre(properties, Blocks.REDSTONE_ORE, 1.0f / 4.0f),
 					BlockBehaviour.Properties.ofFullCopy(Blocks.LAPIS_ORE).randomTicks()
 	);
-	public static final Block ENRICHED_QUARTZ_ORE = createBlock(
-					"enriched_quartz_ore",
-					properties -> new EnrichedOre(properties, Blocks.NETHER_QUARTZ_ORE, 1.0f / 32.0f),
+	public static final Block ENRICHED_NETHER_QUARTZ_ORE = createBlock(
+					"enriched_nether_quartz_ore",
+					properties -> new EnrichedOre(properties, Blocks.NETHER_QUARTZ_ORE, 1.0f / 4.0f),
 					BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_QUARTZ_ORE).randomTicks()
 	);
 
@@ -208,7 +207,7 @@ public class CrystalsModFabricBlocks {
 						List.of(0.10f, 0.10f, 0.10f, 0.10f)
 		);
 		EnrichedOre.putCrystallisation(
-						ENRICHED_QUARTZ_ORE,
+						ENRICHED_NETHER_QUARTZ_ORE,
 						List.of(Blocks.AIR, SMALL_QUARTZ_CRYSTAL, MEDIUM_QUARTZ_CRYSTAL, LARGE_QUARTZ_CRYSTAL, QUARTZ_CRYSTAL),
 						List.of(0.10f, 0.10f, 0.10f, 0.10f)
 		);

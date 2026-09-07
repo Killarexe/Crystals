@@ -43,7 +43,7 @@ public class CrystalsEnUsLangProvider extends FabricLanguageProvider {
     translationBuilder.add(CrystalsModFabricBlocks.MEDIUM_REDSTONE_CRYSTAL.asItem(), "Medium Redstone Crystal");
     translationBuilder.add(CrystalsModFabricBlocks.SMALL_REDSTONE_CRYSTAL.asItem(), "Small Redstone Crystal");
 
-    translationBuilder.add(CrystalsModFabricBlocks.ENRICHED_QUARTZ_ORE.asItem(), "Enriched Quartz Ore");
+    translationBuilder.add(CrystalsModFabricBlocks.ENRICHED_NETHER_QUARTZ_ORE.asItem(), "Enriched Nether Quartz Ore");
     translationBuilder.add(CrystalsModFabricBlocks.QUARTZ_CRYSTAL.asItem(), "Quartz Crystal");
     translationBuilder.add(CrystalsModFabricBlocks.LARGE_QUARTZ_CRYSTAL.asItem(), "Large Quartz Crystal");
     translationBuilder.add(CrystalsModFabricBlocks.MEDIUM_QUARTZ_CRYSTAL.asItem(), "Medium Quartz Crystal");

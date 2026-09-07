@@ -10,12 +10,13 @@ import github.killarexe.crystals.fabric.registry.CrystalsModFabricItems;
 import net.fabricmc.api.ModInitializer;
 
 public class CrystalsModFabric implements ModInitializer {
-	public static final Logger LOGGER = LoggerFactory.getLogger(CrystalsMod.MOD_ID);
-	
     @Override
     public void onInitialize() {
+			CrystalsMod.LOGGER.info("Crystals Register Blocks...");
     	CrystalsModFabricBlocks.register();
+			CrystalsMod.LOGGER.info("Crystals Register Items...");
     	CrystalsModFabricItems.register();
+			CrystalsMod.LOGGER.info("Crystals Register Features...");
     	CrystalsModFabricFeatures.register();
     }
 }
