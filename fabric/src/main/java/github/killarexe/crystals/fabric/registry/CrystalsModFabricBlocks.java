@@ -146,30 +146,29 @@ public class CrystalsModFabricBlocks {
 			BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD).requiresCorrectToolForDrops()
 	);
 
-	//TODO: Balance values
   public static final Block ENRICHED_DIAMOND_ORE = createBlock(
       "enriched_diamond_ore",
-			properties -> new EnrichedOre(properties, Blocks.DIAMOND_ORE, 1.0f / 4.0f),
+			properties -> new EnrichedOre(properties, Blocks.DIAMOND_ORE, 1.0f / 64.0f),
       BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_ORE).randomTicks()
   );
 	public static final Block ENRICHED_EMERALD_ORE = createBlock(
 					"enriched_emerald_ore",
-					properties -> new EnrichedOre(properties, Blocks.EMERALD_ORE, 1.0f / 4.0f),
+					properties -> new EnrichedOre(properties, Blocks.EMERALD_ORE, 1.0f / 64.0f),
 					BlockBehaviour.Properties.ofFullCopy(Blocks.EMERALD_ORE).randomTicks()
 	);
 	public static final Block ENRICHED_LAPIS_ORE = createBlock(
 					"enriched_lapis_ore",
-					properties -> new EnrichedOre(properties, Blocks.LAPIS_ORE, 1.0f / 4.0f),
+					properties -> new EnrichedOre(properties, Blocks.LAPIS_ORE, 1.0f / 128.0f),
 					BlockBehaviour.Properties.ofFullCopy(Blocks.LAPIS_ORE).randomTicks()
 	);
 	public static final Block ENRICHED_REDSTONE_ORE = createBlock(
 					"enriched_redstone_ore",
-					properties -> new RedstoneEnrichedOre(properties, Blocks.REDSTONE_ORE, 1.0f / 4.0f),
+					properties -> new RedstoneEnrichedOre(properties, Blocks.REDSTONE_ORE, 1.0f / 128.0f),
 					BlockBehaviour.Properties.ofFullCopy(Blocks.LAPIS_ORE).randomTicks()
 	);
 	public static final Block ENRICHED_NETHER_QUARTZ_ORE = createBlock(
 					"enriched_nether_quartz_ore",
-					properties -> new EnrichedOre(properties, Blocks.NETHER_QUARTZ_ORE, 1.0f / 4.0f),
+					properties -> new EnrichedOre(properties, Blocks.NETHER_QUARTZ_ORE, 1.0f / 256.0f),
 					BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_QUARTZ_ORE).randomTicks()
 	);
 
@@ -185,16 +184,15 @@ public class CrystalsModFabricBlocks {
 			Registry.register(BuiltInRegistries.BLOCK, CrystalsMod.id(id), block);
 		});
 
-		//TODO: Balance values
 		EnrichedOre.putCrystallisation(
 						ENRICHED_DIAMOND_ORE,
 						List.of(Blocks.AIR, SMALL_DIAMOND_CRYSTAL, MEDIUM_DIAMOND_CRYSTAL, LARGE_DIAMOND_CRYSTAL, DIAMOND_CRYSTAL),
-						List.of(0.10f, 0.10f, 0.10f, 0.10f)
+						List.of(0.07f, 0.07f, 0.07f, 0.07f)
 		);
 		EnrichedOre.putCrystallisation(
 						ENRICHED_EMERALD_ORE,
 						List.of(Blocks.AIR, SMALL_EMERALD_CRYSTAL, MEDIUM_EMERALD_CRYSTAL, LARGE_EMERALD_CRYSTAL, EMERALD_CRYSTAL),
-						List.of(0.10f, 0.10f, 0.10f, 0.10f)
+						List.of(0.07f, 0.07f, 0.07f, 0.07f)
 		);
 		EnrichedOre.putCrystallisation(
 						ENRICHED_LAPIS_ORE,
@@ -209,7 +207,7 @@ public class CrystalsModFabricBlocks {
 		EnrichedOre.putCrystallisation(
 						ENRICHED_NETHER_QUARTZ_ORE,
 						List.of(Blocks.AIR, SMALL_QUARTZ_CRYSTAL, MEDIUM_QUARTZ_CRYSTAL, LARGE_QUARTZ_CRYSTAL, QUARTZ_CRYSTAL),
-						List.of(0.10f, 0.10f, 0.10f, 0.10f)
+						List.of(0.17f, 0.17f, 0.17f, 0.17f)
 		);
 	}
 }

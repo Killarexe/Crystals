@@ -1,17 +1,12 @@
 package github.killarexe.crystals.forge;
 
 import github.killarexe.crystals.CrystalsMod;
-import github.killarexe.crystals.blocks.EnrichedOre;
 import github.killarexe.crystals.forge.registry.CrystalsModNeoForgeBlocks;
 import github.killarexe.crystals.forge.registry.CrystalsModNeoForgeFeatures;
 import github.killarexe.crystals.forge.registry.CrystalsModNeoForgeItems;
-import net.minecraft.world.level.block.Blocks;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
-import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
-
-import java.util.List;
 
 @Mod(CrystalsMod.MOD_ID)
 public class CrystalsModNeoForge {

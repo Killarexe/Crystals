@@ -148,30 +148,29 @@ public class CrystalsModNeoForgeBlocks {
 					BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD).requiresCorrectToolForDrops()
 	);
 
-	//TODO: Balance values
 	public static final Supplier<Block> ENRICHED_DIAMOND_ORE = createBlock(
 					"enriched_diamond_ore",
-					properties -> () -> new EnrichedOre(properties, Blocks.DIAMOND_ORE, 1.0f / 32.0f),
+					properties -> () -> new EnrichedOre(properties, Blocks.DIAMOND_ORE, 1.0f / 64.0f),
 					BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_ORE).randomTicks()
 	);
 	public static final Supplier<Block> ENRICHED_EMERALD_ORE = createBlock(
 					"enriched_emerald_ore",
-					properties -> () -> new EnrichedOre(properties, Blocks.EMERALD_ORE, 1.0f / 32.0f),
+					properties -> () -> new EnrichedOre(properties, Blocks.EMERALD_ORE, 1.0f / 64.0f),
 					BlockBehaviour.Properties.ofFullCopy(Blocks.EMERALD_ORE).randomTicks()
 	);
 	public static final Supplier<Block> ENRICHED_LAPIS_ORE = createBlock(
 					"enriched_lapis_ore",
-					properties -> () -> new EnrichedOre(properties, Blocks.LAPIS_ORE, 1.0f / 32.0f),
+					properties -> () -> new EnrichedOre(properties, Blocks.LAPIS_ORE, 1.0f / 128.0f),
 					BlockBehaviour.Properties.ofFullCopy(Blocks.LAPIS_ORE).randomTicks()
 	);
 	public static final Supplier<Block> ENRICHED_REDSTONE_ORE = createBlock(
 					"enriched_redstone_ore",
-					properties -> () -> new RedstoneEnrichedOre(properties, Blocks.REDSTONE_ORE, 1.0f / 32.0f),
+					properties -> () -> new RedstoneEnrichedOre(properties, Blocks.REDSTONE_ORE, 1.0f / 128.0f),
 					BlockBehaviour.Properties.ofFullCopy(Blocks.LAPIS_ORE).randomTicks()
 	);
 	public static final Supplier<Block> ENRICHED_NETHER_QUARTZ_ORE = createBlock(
 					"enriched_nether_quartz_ore",
-					properties -> () -> new EnrichedOre(properties, Blocks.NETHER_QUARTZ_ORE, 1.0f / 32.0f),
+					properties -> () -> new EnrichedOre(properties, Blocks.NETHER_QUARTZ_ORE, 1.0f / 256.0f),
 					BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_QUARTZ_ORE).randomTicks()
 	);
 
@@ -183,16 +182,15 @@ public class CrystalsModNeoForgeBlocks {
 
 	private static void commonSetup(final FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
-			//TODO: Balance values
 			EnrichedOre.putCrystallisation(
 							ENRICHED_DIAMOND_ORE.get(),
 							List.of(Blocks.AIR, SMALL_DIAMOND_CRYSTAL.get(), MEDIUM_DIAMOND_CRYSTAL.get(), LARGE_DIAMOND_CRYSTAL.get(), DIAMOND_CRYSTAL.get()),
-							List.of(0.10f, 0.10f, 0.10f, 0.10f)
+							List.of(0.07f, 0.07f, 0.07f, 0.07f)
 			);
 			EnrichedOre.putCrystallisation(
 							ENRICHED_EMERALD_ORE.get(),
 							List.of(Blocks.AIR, SMALL_EMERALD_CRYSTAL.get(), MEDIUM_EMERALD_CRYSTAL.get(), LARGE_EMERALD_CRYSTAL.get(), EMERALD_CRYSTAL.get()),
-							List.of(0.10f, 0.10f, 0.10f, 0.10f)
+							List.of(0.07f, 0.07f, 0.07f, 0.07f)
 			);
 			EnrichedOre.putCrystallisation(
 							ENRICHED_LAPIS_ORE.get(),
@@ -207,7 +205,7 @@ public class CrystalsModNeoForgeBlocks {
 			EnrichedOre.putCrystallisation(
 							ENRICHED_NETHER_QUARTZ_ORE.get(),
 							List.of(Blocks.AIR, SMALL_QUARTZ_CRYSTAL.get(), MEDIUM_QUARTZ_CRYSTAL.get(), LARGE_QUARTZ_CRYSTAL.get(), QUARTZ_CRYSTAL.get()),
-							List.of(0.10f, 0.10f, 0.10f, 0.10f)
+							List.of(0.17f, 0.17f, 0.17f, 0.17f)
 			);
 		});
 	}
