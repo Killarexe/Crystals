@@ -107,22 +107,22 @@ public class CrystalsModFabricBlocks {
 	public static final Block SMALL_GLOWSTONE_CRYSTAL = createBlock(
 					"small_glowstone_crystal",
 					properties -> new AmethystClusterBlock(3, 8, properties),
-					BlockBehaviour.Properties.ofFullCopy(Blocks.SMALL_AMETHYST_BUD).requiresCorrectToolForDrops()
+					BlockBehaviour.Properties.ofFullCopy(Blocks.SMALL_AMETHYST_BUD)
 	);
 	public static final Block MEDIUM_GLOWSTONE_CRYSTAL = createBlock(
 					"medium_glowstone_crystal",
 					properties -> new AmethystClusterBlock(4, 10, properties),
-					BlockBehaviour.Properties.ofFullCopy(Blocks.MEDIUM_AMETHYST_BUD).requiresCorrectToolForDrops()
+					BlockBehaviour.Properties.ofFullCopy(Blocks.MEDIUM_AMETHYST_BUD)
 	);
 	public static final Block LARGE_GLOWSTONE_CRYSTAL = createBlock(
 					"large_glowstone_crystal",
 					properties -> new AmethystClusterBlock(5, 10, properties),
-					BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD).requiresCorrectToolForDrops()
+					BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD)
 	);
 	public static final Block GLOWSTONE_CRYSTAL = createBlock(
 			"glowstone_crystal",
 			properties -> new AmethystClusterBlock(7, 10, properties),
-			BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD).lightLevel(_state -> 10).requiresCorrectToolForDrops()
+			BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD).lightLevel(_state -> 10)
 	);
 
 	public static final Block SMALL_QUARTZ_CRYSTAL = createBlock(
@@ -163,8 +163,8 @@ public class CrystalsModFabricBlocks {
 	);
 	public static final Block ENRICHED_REDSTONE_ORE = createBlock(
 					"enriched_redstone_ore",
-					properties -> new RedstoneEnrichedOre(properties, Blocks.REDSTONE_ORE, 1.0f / 128.0f),
-					BlockBehaviour.Properties.ofFullCopy(Blocks.LAPIS_ORE).randomTicks()
+          RedstoneEnrichedOre::new,
+					BlockBehaviour.Properties.ofFullCopy(Blocks.REDSTONE_ORE).randomTicks()
 	);
 	public static final Block ENRICHED_NETHER_QUARTZ_ORE = createBlock(
 					"enriched_nether_quartz_ore",

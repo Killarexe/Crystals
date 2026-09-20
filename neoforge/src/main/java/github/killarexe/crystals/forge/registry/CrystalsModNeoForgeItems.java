@@ -4,9 +4,7 @@ import github.killarexe.crystals.CrystalsMod;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -25,7 +23,7 @@ public class CrystalsModNeoForgeItems {
 	public static void addItemsToCreativeTabs(BuildCreativeModeTabContentsEvent event) {
 		ITEMS.getEntries().forEach(item -> {
 			if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
-				event.accept(item.get());
+				event.insertAfter(new ItemStack(Items.AMETHYST_CLUSTER), new ItemStack(item.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
 			}
 		});
 	}

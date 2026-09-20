@@ -63,19 +63,10 @@ public class CrystalsTagsProvider extends FabricTagProvider.BlockTagProvider {
             .add(CrystalsModFabricBlocks.LARGE_LAPIS_CRYSTAL)
             .add(CrystalsModFabricBlocks.MEDIUM_LAPIS_CRYSTAL)
             .add(CrystalsModFabricBlocks.SMALL_LAPIS_CRYSTAL)
-            .add(CrystalsModFabricBlocks.GLOWSTONE_CRYSTAL)
-            .add(CrystalsModFabricBlocks.LARGE_GLOWSTONE_CRYSTAL)
-            .add(CrystalsModFabricBlocks.MEDIUM_GLOWSTONE_CRYSTAL)
-            .add(CrystalsModFabricBlocks.SMALL_GLOWSTONE_CRYSTAL)
             .add(CrystalsModFabricBlocks.ENRICHED_REDSTONE_ORE)
             .add(CrystalsModFabricBlocks.REDSTONE_CRYSTAL)
             .add(CrystalsModFabricBlocks.LARGE_REDSTONE_CRYSTAL)
             .add(CrystalsModFabricBlocks.MEDIUM_REDSTONE_CRYSTAL)
-            .add(CrystalsModFabricBlocks.SMALL_REDSTONE_CRYSTAL)
-            .add(CrystalsModFabricBlocks.ENRICHED_NETHER_QUARTZ_ORE)
-            .add(CrystalsModFabricBlocks.QUARTZ_CRYSTAL)
-            .add(CrystalsModFabricBlocks.LARGE_QUARTZ_CRYSTAL)
-            .add(CrystalsModFabricBlocks.MEDIUM_QUARTZ_CRYSTAL)
-            .add(CrystalsModFabricBlocks.SMALL_QUARTZ_CRYSTAL);
+            .add(CrystalsModFabricBlocks.SMALL_REDSTONE_CRYSTAL);
   }
 }

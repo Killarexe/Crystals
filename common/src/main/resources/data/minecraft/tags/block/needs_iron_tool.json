@@ -15,19 +15,10 @@
     "crystals:large_lapis_crystal",
     "crystals:medium_lapis_crystal",
     "crystals:small_lapis_crystal",
-    "crystals:glowstone_crystal",
-    "crystals:large_glowstone_crystal",
-    "crystals:medium_glowstone_crystal",
-    "crystals:small_glowstone_crystal",
     "crystals:enriched_redstone_ore",
     "crystals:redstone_crystal",
     "crystals:large_redstone_crystal",
     "crystals:medium_redstone_crystal",
-    "crystals:small_redstone_crystal",
-    "crystals:enriched_nether_quartz_ore",
-    "crystals:quartz_crystal",
-    "crystals:large_quartz_crystal",
-    "crystals:medium_quartz_crystal",
-    "crystals:small_quartz_crystal"
+    "crystals:small_redstone_crystal"
   ]
 }
