@@ -13,9 +13,9 @@ public class CrystalsModFabricClient implements ClientModInitializer{
 	@Override
 	public void onInitializeClient() {
 		CrystalsModFabricBlocks.BLOCKS.values().forEach(block -> {
-      if (!(block instanceof EnrichedOre)) {
-        BlockRenderLayerMap.putBlock(block, ChunkSectionLayer.CUTOUT);
-      }
+			if (!(block instanceof EnrichedOre)) {
+				BlockRenderLayerMap.putBlock(block, ChunkSectionLayer.CUTOUT);
+			}
 		});
 	}
 }

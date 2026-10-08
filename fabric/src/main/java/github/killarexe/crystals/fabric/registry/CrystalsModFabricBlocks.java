@@ -21,135 +21,135 @@ public class CrystalsModFabricBlocks {
 	public static final HashMap<String, Block> BLOCKS = new HashMap<>();
 
 	public static final Block SMALL_DIAMOND_CRYSTAL = createBlock(
-			"small_diamond_crystal",
-			properties -> new AmethystClusterBlock(3, 8, properties),
-			BlockBehaviour.Properties.ofFullCopy(Blocks.SMALL_AMETHYST_BUD).requiresCorrectToolForDrops()
+		"small_diamond_crystal",
+		properties -> new AmethystClusterBlock(3, 8, properties),
+		BlockBehaviour.Properties.ofFullCopy(Blocks.SMALL_AMETHYST_BUD).requiresCorrectToolForDrops()
 	);
 	public static final Block MEDIUM_DIAMOND_CRYSTAL = createBlock(
-			"medium_diamond_crystal",
-			properties -> new AmethystClusterBlock(4, 10, properties),
-			BlockBehaviour.Properties.ofFullCopy(Blocks.MEDIUM_AMETHYST_BUD).requiresCorrectToolForDrops()
+		"medium_diamond_crystal",
+		properties -> new AmethystClusterBlock(4, 10, properties),
+		BlockBehaviour.Properties.ofFullCopy(Blocks.MEDIUM_AMETHYST_BUD).requiresCorrectToolForDrops()
 	);
 	public static final Block LARGE_DIAMOND_CRYSTAL = createBlock(
-			"large_diamond_crystal",
-			properties -> new AmethystClusterBlock(5, 10, properties),
-			BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD).requiresCorrectToolForDrops()
+		"large_diamond_crystal",
+		properties -> new AmethystClusterBlock(5, 10, properties),
+		BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD).requiresCorrectToolForDrops()
 	);
 	public static final Block DIAMOND_CRYSTAL = createBlock(
-			"diamond_crystal",
-			properties -> new AmethystClusterBlock(7, 10, properties),
-			BlockBehaviour.Properties.ofFullCopy(Blocks.AMETHYST_CLUSTER).requiresCorrectToolForDrops()
+		"diamond_crystal",
+		properties -> new AmethystClusterBlock(7, 10, properties),
+		BlockBehaviour.Properties.ofFullCopy(Blocks.AMETHYST_CLUSTER).requiresCorrectToolForDrops()
 	);
 
 	public static final Block SMALL_EMERALD_CRYSTAL = createBlock(
-			"small_emerald_crystal",
-			properties -> new AmethystClusterBlock(3, 8, properties),
-			BlockBehaviour.Properties.ofFullCopy(Blocks.SMALL_AMETHYST_BUD).requiresCorrectToolForDrops()
+		"small_emerald_crystal",
+		properties -> new AmethystClusterBlock(3, 8, properties),
+		BlockBehaviour.Properties.ofFullCopy(Blocks.SMALL_AMETHYST_BUD).requiresCorrectToolForDrops()
 	);
 	public static final Block MEDIUM_EMERALD_CRYSTAL = createBlock(
-			"medium_emerald_crystal",
-			properties -> new AmethystClusterBlock(4, 10, properties),
-			BlockBehaviour.Properties.ofFullCopy(Blocks.MEDIUM_AMETHYST_BUD).requiresCorrectToolForDrops()
+		"medium_emerald_crystal",
+		properties -> new AmethystClusterBlock(4, 10, properties),
+		BlockBehaviour.Properties.ofFullCopy(Blocks.MEDIUM_AMETHYST_BUD).requiresCorrectToolForDrops()
 	);
 	public static final Block LARGE_EMERALD_CRYSTAL = createBlock(
-			"large_emerald_crystal",
-			properties -> new AmethystClusterBlock(5, 10, properties),
-			BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD).requiresCorrectToolForDrops()
+		"large_emerald_crystal",
+		properties -> new AmethystClusterBlock(5, 10, properties),
+		BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD).requiresCorrectToolForDrops()
 	);
 	public static final Block EMERALD_CRYSTAL = createBlock(
-			"emerald_crystal",
-			properties -> new AmethystClusterBlock(7, 10, properties),
-			BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD).requiresCorrectToolForDrops()
+		"emerald_crystal",
+		properties -> new AmethystClusterBlock(7, 10, properties),
+		BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD).requiresCorrectToolForDrops()
 	);
 
 	public static final Block SMALL_LAPIS_CRYSTAL = createBlock(
-					"small_lapis_crystal",
-					properties -> new AmethystClusterBlock(3, 8, properties),
-					BlockBehaviour.Properties.ofFullCopy(Blocks.SMALL_AMETHYST_BUD).requiresCorrectToolForDrops()
+		"small_lapis_crystal",
+		properties -> new AmethystClusterBlock(3, 8, properties),
+		BlockBehaviour.Properties.ofFullCopy(Blocks.SMALL_AMETHYST_BUD).requiresCorrectToolForDrops()
 	);
 	public static final Block MEDIUM_LAPIS_CRYSTAL = createBlock(
-					"medium_lapis_crystal",
-					properties -> new AmethystClusterBlock(4, 10, properties),
-					BlockBehaviour.Properties.ofFullCopy(Blocks.MEDIUM_AMETHYST_BUD).requiresCorrectToolForDrops()
+		"medium_lapis_crystal",
+		properties -> new AmethystClusterBlock(4, 10, properties),
+		BlockBehaviour.Properties.ofFullCopy(Blocks.MEDIUM_AMETHYST_BUD).requiresCorrectToolForDrops()
 	);
 	public static final Block LARGE_LAPIS_CRYSTAL = createBlock(
-					"large_lapis_crystal",
-					properties -> new AmethystClusterBlock(5, 10, properties),
-					BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD).requiresCorrectToolForDrops()
+		"large_lapis_crystal",
+		properties -> new AmethystClusterBlock(5, 10, properties),
+		BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD).requiresCorrectToolForDrops()
 	);
 	public static final Block LAPIS_CRYSTAL = createBlock(
-			"lapis_crystal",
-			properties -> new AmethystClusterBlock(7, 10, properties),
-			BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD).requiresCorrectToolForDrops()
+		"lapis_crystal",
+		properties -> new AmethystClusterBlock(7, 10, properties),
+		BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD).requiresCorrectToolForDrops()
 	);
 
 	public static final Block SMALL_REDSTONE_CRYSTAL = createBlock(
-					"small_redstone_crystal",
-					properties -> new AmethystClusterBlock(3, 8, properties),
-					BlockBehaviour.Properties.ofFullCopy(Blocks.SMALL_AMETHYST_BUD).requiresCorrectToolForDrops()
+		"small_redstone_crystal",
+		properties -> new AmethystClusterBlock(3, 8, properties),
+		BlockBehaviour.Properties.ofFullCopy(Blocks.SMALL_AMETHYST_BUD).requiresCorrectToolForDrops()
 	);
 	public static final Block MEDIUM_REDSTONE_CRYSTAL = createBlock(
-					"medium_redstone_crystal",
-					properties -> new AmethystClusterBlock(4, 10, properties),
-					BlockBehaviour.Properties.ofFullCopy(Blocks.MEDIUM_AMETHYST_BUD).requiresCorrectToolForDrops()
+		"medium_redstone_crystal",
+		properties -> new AmethystClusterBlock(4, 10, properties),
+		BlockBehaviour.Properties.ofFullCopy(Blocks.MEDIUM_AMETHYST_BUD).requiresCorrectToolForDrops()
 	);
 	public static final Block LARGE_REDSTONE_CRYSTAL = createBlock(
-					"large_redstone_crystal",
-					properties -> new AmethystClusterBlock(5, 10, properties),
-					BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD).requiresCorrectToolForDrops()
+		"large_redstone_crystal",
+		properties -> new AmethystClusterBlock(5, 10, properties),
+		BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD).requiresCorrectToolForDrops()
 	);
 	public static final Block REDSTONE_CRYSTAL = createBlock(
-			"redstone_crystal",
-			properties -> new RedstoneClusterBlock(7, 10, properties),
-			BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD).requiresCorrectToolForDrops()
+		"redstone_crystal",
+		properties -> new RedstoneClusterBlock(7, 10, properties),
+		BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD).requiresCorrectToolForDrops()
 	);
 
 	public static final Block SMALL_GLOWSTONE_CRYSTAL = createBlock(
-					"small_glowstone_crystal",
-					properties -> new AmethystClusterBlock(3, 8, properties),
-					BlockBehaviour.Properties.ofFullCopy(Blocks.SMALL_AMETHYST_BUD)
+		"small_glowstone_crystal",
+		properties -> new AmethystClusterBlock(3, 8, properties),
+		BlockBehaviour.Properties.ofFullCopy(Blocks.SMALL_AMETHYST_BUD)
 	);
 	public static final Block MEDIUM_GLOWSTONE_CRYSTAL = createBlock(
-					"medium_glowstone_crystal",
-					properties -> new AmethystClusterBlock(4, 10, properties),
-					BlockBehaviour.Properties.ofFullCopy(Blocks.MEDIUM_AMETHYST_BUD)
+		"medium_glowstone_crystal",
+		properties -> new AmethystClusterBlock(4, 10, properties),
+		BlockBehaviour.Properties.ofFullCopy(Blocks.MEDIUM_AMETHYST_BUD)
 	);
 	public static final Block LARGE_GLOWSTONE_CRYSTAL = createBlock(
-					"large_glowstone_crystal",
-					properties -> new AmethystClusterBlock(5, 10, properties),
-					BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD)
+		"large_glowstone_crystal",
+		properties -> new AmethystClusterBlock(5, 10, properties),
+		BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD)
 	);
 	public static final Block GLOWSTONE_CRYSTAL = createBlock(
-			"glowstone_crystal",
-			properties -> new AmethystClusterBlock(7, 10, properties),
-			BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD).lightLevel(_state -> 10)
+		"glowstone_crystal",
+		properties -> new AmethystClusterBlock(7, 10, properties),
+		BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD).lightLevel(_state -> 10)
 	);
 
 	public static final Block SMALL_QUARTZ_CRYSTAL = createBlock(
-					"small_quartz_crystal",
-					properties -> new AmethystClusterBlock(3, 8, properties),
-					BlockBehaviour.Properties.ofFullCopy(Blocks.SMALL_AMETHYST_BUD).requiresCorrectToolForDrops()
+		"small_quartz_crystal",
+		properties -> new AmethystClusterBlock(3, 8, properties),
+		BlockBehaviour.Properties.ofFullCopy(Blocks.SMALL_AMETHYST_BUD).requiresCorrectToolForDrops()
 	);
 	public static final Block MEDIUM_QUARTZ_CRYSTAL = createBlock(
-					"medium_quartz_crystal",
-					properties -> new AmethystClusterBlock(4, 10, properties),
-					BlockBehaviour.Properties.ofFullCopy(Blocks.MEDIUM_AMETHYST_BUD).requiresCorrectToolForDrops()
+		"medium_quartz_crystal",
+		properties -> new AmethystClusterBlock(4, 10, properties),
+		BlockBehaviour.Properties.ofFullCopy(Blocks.MEDIUM_AMETHYST_BUD).requiresCorrectToolForDrops()
 	);
 	public static final Block LARGE_QUARTZ_CRYSTAL = createBlock(
-					"large_quartz_crystal",
-					properties -> new AmethystClusterBlock(5, 10, properties),
-					BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD).requiresCorrectToolForDrops()
+		"large_quartz_crystal",
+		properties -> new AmethystClusterBlock(5, 10, properties),
+		BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD).requiresCorrectToolForDrops()
 	);
 	public static final Block QUARTZ_CRYSTAL = createBlock(
-			"quartz_crystal",
-			properties -> new AmethystClusterBlock(7, 10, properties),
-			BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD).requiresCorrectToolForDrops()
+		"quartz_crystal",
+		properties -> new AmethystClusterBlock(7, 10, properties),
+		BlockBehaviour.Properties.ofFullCopy(Blocks.LARGE_AMETHYST_BUD).requiresCorrectToolForDrops()
 	);
 
   public static final Block ENRICHED_DIAMOND_ORE = createBlock(
-      "enriched_diamond_ore",
-			properties -> new EnrichedOre(properties, Blocks.DIAMOND_ORE, 1.0f / 64.0f),
-      BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_ORE).randomTicks()
+	  "enriched_diamond_ore",
+	  properties -> new EnrichedOre(properties, Blocks.DIAMOND_ORE, 1.0f / 64.0f),
+	  BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_ORE).randomTicks()
   );
 	public static final Block ENRICHED_EMERALD_ORE = createBlock(
 					"enriched_emerald_ore",
@@ -178,7 +178,7 @@ public class CrystalsModFabricBlocks {
 		BLOCKS.put(id, block);
 		return block;
 	}
-	
+
 	public static void register() {
 		BLOCKS.forEach((id, block) -> {
 			Registry.register(BuiltInRegistries.BLOCK, CrystalsMod.id(id), block);

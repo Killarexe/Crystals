@@ -12,11 +12,11 @@ import net.fabricmc.api.ModInitializer;
 public class CrystalsModFabric implements ModInitializer {
     @Override
     public void onInitialize() {
-			CrystalsMod.LOGGER.info("Crystals Register Blocks...");
+		CrystalsMod.LOGGER.info("Crystals Register Blocks...");
     	CrystalsModFabricBlocks.register();
-			CrystalsMod.LOGGER.info("Crystals Register Items...");
+		CrystalsMod.LOGGER.info("Crystals Register Items...");
     	CrystalsModFabricItems.register();
-			CrystalsMod.LOGGER.info("Crystals Register Features...");
+		CrystalsMod.LOGGER.info("Crystals Register Features...");
     	CrystalsModFabricFeatures.register();
     }
 }
