@@ -7,7 +7,7 @@ pluginManagement {
     }
 }
 
-rootProject.name = 'Copper Extension'
+rootProject.name = 'Crystals'
 
 include 'common'
 include 'fabric'
