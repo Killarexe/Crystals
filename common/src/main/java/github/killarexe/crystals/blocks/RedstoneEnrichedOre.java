@@ -70,6 +70,7 @@ public class RedstoneEnrichedOre extends EnrichedOre {
 
   @Override
   protected void randomTick(BlockState blockState, ServerLevel serverLevel, BlockPos blockPos, RandomSource randomSource) {
+    super.randomTick(blockState, serverLevel, blockPos, randomSource);
     if (blockState.getValue(LIT)) {
       serverLevel.setBlock(blockPos, blockState.setValue(LIT, false), Block.UPDATE_ALL);
     }
@@ -92,7 +93,7 @@ public class RedstoneEnrichedOre extends EnrichedOre {
 
   @Override
   protected boolean isRandomlyTicking(BlockState blockState) {
-    return blockState.getValue(LIT);
+    return true;
   }
 
   @Override
